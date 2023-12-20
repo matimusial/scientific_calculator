@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1711</width>
+    <height>769</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dwie macierze</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">*{
+	font-family: Arial;
+	font-size: 24px;
+}
+#centralwidget{
+	background-color: #0ca678;
+}
+QPushButton{
+	height: 60px;
+	border: 2px solid white;
+	border-radius: 12px;
+	color: white;
+	background-color: transparent;
+}
+QPushButton:hover{
+background-color: white; 
+color: #0ca678;
+}
+QLabel{
+	padding-right: 10px;
+	border: 2px solid white;
+	border-radius: 12px;
+	color: white;
+}
+QLineEdit, QLineEdit:active{
+	color: white;
+	border: 2px solid white;
+	background: #0ca678;
+}
+QComboBox{
+	background: #0ca678;
+	border: 2px solid white;
+	color: white;
+}
+#matrix1widget, #matrix2widget, #matrix3widget{
+border: 2px solid white;
+}</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QPushButton" name="btnBack">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>91</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border: none;
+border-radius: 0;</string>
+    </property>
+    <property name="text">
+     <string>Wróć</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="labelError">
+    <property name="geometry">
+     <rect>
+      <x>580</x>
+      <y>50</y>
+      <width>491</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border: none;
+color: #ff6b6b;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="comboOperands">
+    <property name="geometry">
+     <rect>
+      <x>500</x>
+      <y>310</y>
+      <width>72</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="editable">
+     <bool>false</bool>
+    </property>
+    <property name="currentText">
+     <string>+</string>
+    </property>
+    <property name="frame">
+     <bool>true</bool>
+    </property>
+    <item>
+     <property name="text">
+      <string>+</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>-</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>*</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>1080</x>
+      <y>310</y>
+      <width>51</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border: none;
+font-size: 32px;</string>
+    </property>
+    <property name="text">
+     <string>=</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnCalculate">
+    <property name="geometry">
+     <rect>
+      <x>1300</x>
+      <y>520</y>
+      <width>141</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Zatwierdź</string>
+    </property>
+   </widget>
+   <widget class="QWidget" name="matrix1widget" native="true">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>180</y>
+      <width>371</width>
+      <height>311</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <widget class="QWidget" name="gridLayoutWidget_2">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>351</width>
+       <height>291</height>
+      </rect>
+     </property>
+     <layout class="QGridLayout" name="matrix1grid" rowstretch="0" columnstretch="0" rowminimumheight="0"/>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="matrix2widget" native="true">
+    <property name="geometry">
+     <rect>
+      <x>650</x>
+      <y>180</y>
+      <width>371</width>
+      <height>311</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <widget class="QWidget" name="gridLayoutWidget_4">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>350</width>
+       <height>291</height>
+      </rect>
+     </property>
+     <layout class="QGridLayout" name="matrix2grid"/>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="matrix3widget" native="true">
+    <property name="geometry">
+     <rect>
+      <x>1180</x>
+      <y>180</y>
+      <width>371</width>
+      <height>311</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <widget class="QWidget" name="gridLayoutWidget_5">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>350</width>
+       <height>291</height>
+      </rect>
+     </property>
+     <layout class="QGridLayout" name="matrix3grid"/>
+    </widget>
+   </widget>
+   <widget class="QComboBox" name="comboMatrix2">
+    <property name="geometry">
+     <rect>
+      <x>490</x>
+      <y>550</y>
+      <width>101</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <item>
+     <property name="text">
+      <string>2x2</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>3x3</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>4x4</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>5x5</string>
+     </property>
+    </item>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

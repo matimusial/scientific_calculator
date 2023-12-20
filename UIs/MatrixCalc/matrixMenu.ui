@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>657</width>
+    <height>857</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Macierze</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">*{
+	font-family: Arial;
+	font-size: 20px;
+}
+#centralwidget{
+	background-color: #0ca678;
+}
+QPushButton{
+	height: 100px;
+	border: 2px solid white;
+	border-radius: 12px;
+	color: white;
+	background-color: transparent;
+}
+QPushButton:hover{
+background-color: white; 
+color: #0ca678;
+}
+</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <widget class="QWidget" name="verticalLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>120</x>
+      <y>200</y>
+      <width>411</width>
+      <height>431</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <widget class="QPushButton" name="btnOneMatrixCalc">
+       <property name="text">
+        <string>Operacje na jednej macierzy</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="btnTwoMatrixCalc">
+       <property name="text">
+        <string>Operacje na dwóch macierzach</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QPushButton" name="btnBack">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>91</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border: none;
+border-radius: 0;</string>
+    </property>
+    <property name="text">
+     <string>Wróć</string>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
