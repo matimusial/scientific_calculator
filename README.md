@@ -1,2 +1,2 @@
 # scientific_calculator
-my first bigger project in python
+This is the first major project during my studies – a scientific calculator written in Python, complete with a custom UI.
